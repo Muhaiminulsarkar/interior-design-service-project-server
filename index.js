@@ -98,12 +98,12 @@ async function run() {
 
 
   //----------------------------------------------
-    // app.get("/services/:id", async (req, res) => {
-    //   const id = req.params.id;
-    //   const query = { _id: ObjectId(id) };
-    //   const service = await servicesCollection.findOne(query);
-    //   res.send(service);
-    // });
+    app.get("/services/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const service = await servicesCollection.findOne(query);
+      res.send(service);
+    });
 
     app.post("/services",  async (req, res) => {
       const newitems = req.body;
