@@ -112,12 +112,12 @@ async function run() {
       res.send(result);
     });
 
-    // app.post("/reviews", async (req, res) => {
-    //   const newitems = req.body;
-    //   console.log("send data ", newitems);
-    //   const result = await reviewsCollection.insertOne(newitems);
-    //   res.send(result);
-    // });
+    app.post("/reviews", async (req, res) => {
+      const newitems = req.body;
+      console.log("send data ", newitems);
+      const result = await reviewsCollection.insertOne(newitems);
+      res.send(result);
+    });
 
     //delete review
     app.delete("/reviews/:id", async (req, res) => {
