@@ -132,7 +132,7 @@ async function run() {
 run().catch((err) => console.error(err));
 
 app.get("/", (req, res) => {
-  res.send("cloud kitchen server is running");
+  res.send("interior design  server is running");
 });
 
 app.listen(port, () => {
