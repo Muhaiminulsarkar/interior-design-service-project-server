@@ -136,7 +136,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`cloud kitchen server ${port}`);
+  console.log(`interior design server ${port}`);
 });
 
 
